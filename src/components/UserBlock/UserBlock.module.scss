@@ -1,0 +1,102 @@
+.columnblock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container{
+    @extend .columnblock;
+    width: 94vw;
+    height: 80px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    justify-content: space-between;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.blockImg{
+    width: 48px;
+    height: 48px;
+    border-radius: 64px;
+    margin-left: 16px;
+}
+
+.name{
+    margin-left: 16px;
+}
+
+.balance{
+    margin-left: 44px;
+}
+
+.status{
+    margin-right: 46px;
+}
+
+.lastChange{
+    margin-right: 54px;
+}
+
+.modal{
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(63, 51, 86, 0.4);
+    overflow-y: hidden;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent{
+    background-color: #FFFFFF;
+    height: 573px;
+    width: 64%;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalNavbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 1px solid #ECEBED;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.modalHeadline{
+    color: #000000;
+    font-size: 34px;
+    margin-left: 34px;
+}
+
+.cross{
+    height: 21px;
+    width: 21px;
+    margin-right: 32.5px;
+    cursor: pointer;
+}
+
+.modalBody{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.modalLine{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+    p{
+        font-size: 15px;
+        margin-right: 44px;
+    }
+}
